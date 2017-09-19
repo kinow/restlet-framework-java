@@ -24,6 +24,14 @@
 
 package org.restlet.engine.adapter;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PushbackInputStream;
+import java.security.cert.Certificate;
+import java.util.List;
+import java.util.logging.Level;
+
 import org.restlet.Context;
 import org.restlet.Response;
 import org.restlet.Server;
@@ -45,14 +53,6 @@ import org.restlet.representation.EmptyRepresentation;
 import org.restlet.representation.InputRepresentation;
 import org.restlet.representation.Representation;
 import org.restlet.service.ConnectorService;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PushbackInputStream;
-import java.security.cert.Certificate;
-import java.util.List;
-import java.util.logging.Level;
 
 /**
  * Abstract HTTP server connector call.
